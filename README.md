@@ -1,50 +1,100 @@
-# React + TypeScript + Vite
+# 🎮 Multi-Game Arcade
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📝 Project Description
 
-Currently, two official plugins are available:
+This project is a **multi-game arcade** built using **Vite, React, TypeScript, and Phaser**. It allows players to choose and play multiple games from a single page, providing a seamless gaming experience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Technologies Used
 
-## Expanding the ESLint configuration
+- **Vite** - Fast build tool for frontend development
+- **React** - Component-based UI library
+- **TypeScript** - Strongly typed JavaScript
+- **Phaser** - 2D game framework for interactive experiences
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## 📂 Project Structure
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+```
+📦 multi-game-arcade
+├── 📂 public
+|   ├── 📂 assets           # Images, sounds, etc.
+|       ├── 📂 GameAssets
+├── 📂 src
+│   ├── 📂 components        # Reusable UI components
+│   ├── 📂 games             # Individual game implementations
+│   │   ├── 📂 game1         # First game
+│   │   ├── 📂 game2         # Second game
+│   │   └── ...
+│   ├── 📂 hooks            # Custom React hooks
+│   ├── 📂 context          # Global game state management
+│   ├── 📂 utils            # Utility functions
+│   ├── App.tsx             # Main application component
+│   ├── main.tsx            # React entry point
+│   ├── vite-env.d.ts       # TypeScript environment variables
+│
+├── 📜 index.html            # Main HTML template
+├── 📜 tsconfig.json         # TypeScript configuration
+├── 📜 vite.config.ts        # Vite configuration
+├── 📜 package.json          # Dependencies and scripts
+├── 📜 README.md             # Project documentation
+└── 📜 .gitignore            # Files to ignore in version control
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## 🎮 How to Play
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+1. Select a game from the **game selection menu**.
+2. Play the game using the provided controls.
+3. Restart or switch games anytime!
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+## 🛠️ Setup & Installation
+
+### 1️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/Ameer372/multi-game-arcade.git
+cd multi-game-arcade
 ```
+
+### 2️⃣ Install Dependencies
+
+```bash
+yarn install  # or npm install
+```
+
+### 3️⃣ Run the Project
+
+```bash
+yarn dev  # or npm run dev
+```
+
+### 4️⃣ Open in Browser
+
+Go to: [http://localhost:5173](http://localhost:5173) (or as specified in your terminal).
+
+## 🕹️ Adding New Games
+
+To add a new game:
+
+1. Create a new folder in `src/games/` (e.g., `src/games/game3`).
+2. Implement the game using Phaser and TypeScript.
+3. Import and register the game in the game selection menu.
+4. 🎉 Enjoy your new game!
+
+## 📌 Features
+
+✅ Multiple playable games on one page  
+✅ Smooth transitions between games  
+✅ Interactive UI with React  
+✅ High-performance using Vite  
+✅ Strong type safety with TypeScript
+
+## 🤝 Contributing
+
+Feel free to submit issues and pull requests to enhance the arcade! 🚀
+
+## 📜 License
+
+This project is licensed under the **MIT License**.
+
+---
+
+🔹 Happy coding and have fun playing! 🎮🔥

@@ -1,5 +1,5 @@
-import AppleGame from "./Games/AppleGame";
-import PuzzleGame from "./Games/PuzzleGame";
+import AppleGame from "./Games/AppleGame/AppleGame";
+import PuzzleGame from "./Games/PuzzleGame/PuzzleGame";
 
 const App = () => {
   return (

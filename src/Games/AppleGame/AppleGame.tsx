@@ -13,7 +13,7 @@ class StartGameScene extends Phaser.Scene {
   }
 
   preload() {
-    this.load.image("bg", "/assets/bg.png");
+    this.load.image("bg", "/assets/AppleGameAssets/bg.png");
   }
 
   create() {
@@ -70,13 +70,13 @@ class GameScene extends Phaser.Scene {
   }
 
   preload() {
-    this.load.image("bg", "/assets/bg.png");
-    this.load.image("basket", "/assets/basket.png");
-    this.load.image("apple", "/assets/apple.png");
-    this.load.image("money", "/assets/money.png");
-    this.load.audio("coin", "/assets/coin.mp3");
-    this.load.audio("bgMusic", "/assets/bgMusic.mp3");
-    this.load.audio("appleDrop", "/assets/appleDrop.mp3");
+    this.load.image("bg", "/assets/AppleGameAssets/bg.png");
+    this.load.image("basket", "/assets/AppleGameAssets/basket.png");
+    this.load.image("apple", "/assets/AppleGameAssets/apple.png");
+    this.load.image("money", "/assets/AppleGameAssets/money.png");
+    this.load.audio("coin", "/assets/AppleGameAssets/coin.mp3");
+    this.load.audio("bgMusic", "/assets/AppleGameAssets/bgMusic.mp3");
+    this.load.audio("appleDrop", "/assets/AppleGameAssets/appleDrop.mp3");
   }
 
   create() {
@@ -186,7 +186,7 @@ class GameOverScene extends Phaser.Scene {
   }
 
   preload() {
-    this.load.image("bg", "/assets/bg.png");
+    this.load.image("bg", "/assets/AppleGameAssets/bg.png");
   }
 
   create() {
